@@ -1,6 +1,7 @@
 package oopl8;
 
 import produkt.*;
+import figura.*;
 
 
 public class Main {
@@ -23,6 +24,31 @@ public class Main {
             tab[i].showInfo();
             //Proram uruchamia wszystkie metody dla klas w tablicy i wyswietla wyniki na ekran
         }
+
+        FiguraGeometryczna[] tabFig = new FiguraGeometryczna[15];
+        tabFig[0] = new Romb(2, 12);
+        tabFig[1] = new Kolo(9);
+        tabFig[2] = new Kwadrat(7);
+        tabFig[3] = new Szescian(2);
+        tabFig[4] = new Kula(11);
+        tabFig[5] = new Stozek(5, 2);
+        tabFig[6] = new Romb(4, 2);
+        tabFig[7] = new Trojkat(4, 5, 2, 4);
+        tabFig[8] = new Trapez(3, 2, 52);
+        tabFig[9] = new Walec(4, 7);
+        tabFig[10] = new Rownoleglobok(3, 6, 12);
+        tabFig[11] = new Kwadrat(12);
+        tabFig[12] = new Kolo(8);
+        tabFig[13] = new Szescian(8);
+        tabFig[14] = new Kula(12);
+        
+        int i= 0;
+        
+        while(i<tabFig.length){
+            System.out.println(tabFig[i].toString());
+            i++;
+        }
+        
 
     }
 }
